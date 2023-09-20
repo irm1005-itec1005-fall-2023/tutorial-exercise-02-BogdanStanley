@@ -236,6 +236,57 @@
       <h2>Ward Councillor Evaluation Form</h2>
       <p>Rents too high? Not enough housing options in your neighbourhood. OCTranspo buses constantly late or not arriving at all. OTrain shut down again? Do you have to ride your bike on a sidewalk because the roads you use aren't comfortable and don't have a protected bike lane?</p>
       <p>These are all examples of areas of responsibilities that fall to the city and to the mayor and local councillors. Let your councillor know what you think about the job they are doing. Fill out the form below to provide your feedback.</p>
-   <!--Form-->
+   <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+      <label for="name">Name:</label>
+      <input id="name" type="text" placeholder="John Doe" autocomplete="name"/>
+      <label for="email">Email:</label>
+      <input id="email" type="email" placeholder="johndoe@gmail.com" autocomplete="email" required/>
+      <label for="phone">Phone:</label>
+      <input id="phone" type="tel" autocomplete="tel"/>
+      <label for="ward">Ward:</label>
+      <select id="ward" type="text"required>
+      <option value="">--Please choose an option--</option>
+              <option value="ward1">Ward 1</option>
+              <option value="ward2">Ward 2</option>
+              <option value="ward3">Ward 3</option>
+              <option value="ward4">Ward 4</option>
+              <option value="ward5">Ward 5</option>
+              <option value="ward6">Ward 6</option>
+              <option value="ward7">Ward 7</option>
+              <option value="ward8">Ward 8</option>
+              <option value="ward9">Ward 9</option>
+              <option value="ward10">Ward 10</option>
+              <option value="ward11">Ward 11</option>
+              <option value="ward12">Ward 21</option>
+              <option value="ward13">Ward 13</option>
+              <option value="ward14">Ward 14</option>
+              <option value="ward15">Ward 15</option>
+              <option value="ward16">Ward 16</option>
+              <option value="ward17">Ward 17</option>
+              <option value="ward18">Ward 18</option>
+              <option value="ward19">Ward 19</option>
+              <option value="ward20">Ward 20</option>
+              <option value="ward21">Ward 21</option>
+              <option value="ward22">Ward 22</option>
+              <option value="ward23">Ward 23</option>
+              <option value="ward24">Ward 24</option>
+            </select>
+       </fieldset>
+       <fieldset>
+        <legend>Provide Feedback</legend>
+      <label for="feedback">Feedback:</label>
+      <textarea id="feedback" rows="10" cols="50" placeholder="Your message here - 150 character max" maxlength="150"></textarea>
+      <label for="Subject">Subject/Topic:</label>
+      <input id="subject" type="text" required>
+      <label for="type">Type of Feedback:</label>
+      <input id="type" type="text"required>
+        
+      <label for="followup">Follow-up Information:</label>
+      <textarea id="followup" rows="10" cols="50" placeholder="Your message here - 150 character max" maxlength="150"></textarea>
+      <button type="submit">Submit Feedback</button>
+     </fieldset>
+   </form>
     </body>
 </html>
